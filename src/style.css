@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+#megaman {
+    font-family: 'Oswald', sans-serif; 
+}
