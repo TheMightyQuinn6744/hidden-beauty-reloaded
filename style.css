@@ -19,14 +19,36 @@
 #swapEvent2 {
     font-family: 'Oswald', sans-serif;
 }
-
+/*styles the text for style/button and eliminates outline when clicked */
 #styleButton {
     font-family: 'Oswald', sans-serif;
     outline: none;
 }
-
+/*styles the color for color/button and eliminates outline when clicked */
 #colorButton {
     font-family: 'Oswald', sans-serif;
     outline: none;
 }
+/*Hides navbar until user begins to scroll down the page */
+#navbar {
+    top: -100px;
+    transition: top 0.3s;
+    scroll-behavior: smooth; 
+}
+/*Controls background color for tabs, as well as request appointment */
+#megaman {
+    background-color: #222E4E;
+}
+/*Controls background color for footer area */
+#footer {
+    background: #1a243c;
+}
+/*Controls text color for privacy/terms of service */
+#copyright {
+    color: #1e87f0;
+}
 
+/*targets smooth scrolling for all html anchor tags */
+html {
+    scroll-behavior: smooth;
+}
