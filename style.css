@@ -5,13 +5,9 @@
 @tailwind utilities;
 
 /*Text styling controls oswald font styling element across site */
-
 .textstyling {
     font-family: 'Oswald', sans-serif;
 }
-
-
-
 /*styles the text for style/button and eliminates outline when clicked */
 #styleButton {
     font-family: 'Oswald', sans-serif;
@@ -40,6 +36,10 @@
     position: absolute;
     top: 0px;
     font-family: 'Oswald', sans-serif;
+}
+
+#navscroll {
+    
 }
 /*Controls background color for tabs, as well as request appointment */
 .megaman {
