@@ -6,22 +6,12 @@
 
 /*Text styling controls oswald font styling element across site */
 
-#textstyling {
+.textstyling {
     font-family: 'Oswald', sans-serif;
 }
 
-#textstyling2 {
-    font-family: 'Oswald', sans-serif;
-}
-/* swapEvent is linked to color button */ 
-#swapEvent {
-    font-family: 'Oswald', sans-serif;
-}
 
-/*swapEvent2 is linked to cut/style button */
-#swapEvent2 {
-    font-family: 'Oswald', sans-serif;
-}
+
 /*styles the text for style/button and eliminates outline when clicked */
 #styleButton {
     font-family: 'Oswald', sans-serif;
@@ -33,13 +23,26 @@
     outline: none;
 }
 /*Hides navbar until user begins to scroll down the page */
-#navbar {
+.slideinnavbar {
     top: -100px;
     transition: top 0.3s;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    position: fixed; 
+    display: none;
+}
+
+.slideinnavbar {
+    top: 0px;
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 0px;
+    font-family: 'Oswald', sans-serif;
 }
 /*Controls background color for tabs, as well as request appointment */
-#megaman {
+.megaman {
     background-color: #222E4E;
 }
 /*Controls background color for footer area */

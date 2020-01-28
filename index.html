@@ -12,39 +12,45 @@
     <title>Document</title>
 </head>
 <!--Navigation Bar-->
-<body id="main">
-    <header class="w-full">
-        <div class="w-full fixed bg-transparent" id="navbar">
+<body>
+    <header class="w-full slideinnavbar">
+        <div class="w-full bg-transparent" id="navbar">
             <div class="container mx-auto pb-5 text-xl">
-        <div class="flex justify-between items-center" >
-            <img class="w-24 pt-3 mr-24" id="navlogo" src="/images/brand_small_navbar.svg">
+                <nav class="flex justify-between items-center" >
+                    <img class="w-24 pt-3 mr-24 " src="/images/brand_small_navbar.svg" id="navlogo">
             <!--scrolling navbar-->
-            <ul class="text-gray-500 w-full inline-flex justify-end" id="textstyling">
-                <li class="pr-6 hover:text-yellow-600 text-2xl"><a href="#About" id="navtext1">About</a></li>
-                <li class="pr-6 hover:text-yellow-600 text-2xl"><a href="#Services" id="navtext2">Services</a></li>
-                <li class="hover:text-yellow-600 text-2xl"><a href="#Booking" id="navtext3">Booking</a></li>
-            </ul>
-            <!--fixed navbar-->
-            <ul class="text-white inline-flex justify-end" id="textstyling2">
-                <li class="mr-10 hover:text-yellow-600 text-2xl"><a href="#About" id="navtextA">About</a></li>
-                <li class="mr-10 hover:text-yellow-600 text-2xl"><a href="#Services" id="navtextB">Services</a></li>
-                <li class="mr-10 hover:text-yellow-600 text-2xl"><a href="#Booking" id="navtextC">Booking</a></li>
-            </ul>
+                    <ul class="text-gray-500 w-full inline-flex justify-end">
+                        <li class="hover:text-yellow-600 text-2xl textstyling mr-4" id = "navtext1"><a href="#About">About</a></li>
+                        <li class=" hover:text-yellow-600 text-2xl textstyling mr-4" id="navtext2"><a href="#Services">Services</a></li>
+                        <li class="hover:text-yellow-600 text-2xl textstyling" id="navtext3"><a href="#Booking">Booking</a></li>
+                    </ul>
+                </nav>
             </div>
+        </div>
     </header>
    
 <!--Hidden Beauty Logo Overlay-->
-<header>
-<div class="h-screen w-full bg-no-repeat bg-cover w-screen" style="background-image: url(https://www.hiddenbeautyla.com/img/uploads/_1200x675_crop_center-center_82_line/plant.jpg)">
-    <div class="flex h-full justify-center items-center">
-        <img id="logo" class="container flex items-center w-1/3 mx-auto" loading="lazy" src="/images/HiddenBeautyLogo.png">
-    </div>
-</div>
-<div>
-    </header>
+
+    <div class="h-screen w-full bg-no-repeat bg-cover w-screen" style="background-image: url(https://www.hiddenbeautyla.com/img/uploads/_1200x675_crop_center-center_82_line/plant.jpg)">
+        <div class="container pb-5 text-xl">
+            <nav class="flex justify-between items-center navbar w-3/4" >
+                    <!--fixed navbar-->
+                            <ul class="text-gray-500 w-full inline-flex justify-end">
+                                <li class="hover:text-yellow-600 text-2xl mr-3" id="navtextA"><a href="#About">About</a></li>
+                                <li class="hover:text-yellow-600 text-2xl mr-4" id="navtextB"><a href="#Services">Services</a></li>
+                                <li class="hover:text-yellow-600 text-2xl " id="navtextC"><a href="#Booking">Booking</a></li>
+                            </ul>
+            </nav>
+        </div>
+
+            <div class="flex h-full justify-center items-center">
+                <img class="container flex items-center w-1/3 mx-auto" src="/images/HiddenBeautyLogo.png">
+                
+            </div>
+        </div>
 <!--Hidden Beauty Description Section-->
-<a  name="About"></a>
-<div class="text-center uppercase pt-20 pb-12 text-4xl" id="textstyling">We are a team of creative stylists who are passionate about what we do</div>
+
+<div class="text-center uppercase pt-20 pb-12 text-4xl textstyling"><a name="About">We are a team of creative stylists who are passionate about what we do</div>
     <div class="container mx-auto pb-16 w-2/3 text-center text-2xl" >
         <div class="flex justify between items-center">
                 Hidden Beauty is a salon dedicated to bringing our guests a true sense of style. 
@@ -54,144 +60,145 @@
                 we are more than qualified to make you look and feel the way you deserve.
         </div>
     </div>
-    <!--link to services-->
-<div class="flex buttonContainer"><a class="section2" name="Services"></a>
-    <!--Hidden Beauty Style/Color Selector-->
+<!--link to services-->
+<div class="flex buttonContainer"><a name="Services"></a>
+    <!--Hidden Beauty Style/Color Selector button ID's link to main.js-->
     <button class="w-1/2 h-24 text-center py-8 font-bold cursor-pointer outline-none text-white bg-gray-500 hover:bg-blue-900 text-2xl tablinks" id="styleButton">Cut/Style</button>
     <button class="w-1/2 bg-gray-500 h-24 text-center py-8 font-bold cursor-pointer outline-none text-white bg-blue-900 hover:bg-gray-500 text-2xl tablinks" id="colorButton">Color</button>
 </div>
-<!--Pricing Table Cut/Style-->
-<div>
-<ul class="container-center pt-16 mx-10">
-    <li class="list-none text-blue-900 font-semibold">
-        <table class="w-1/2 h-full mx-auto" id="table1">
-            <tbody>
-                <tr>
-                    <td>Womans Cut</td>
-                    <td class="text-right pb-5">$50.00</td>
-                </tr>
-                <tr>
-                    <td>Men's Cut</td>
-                    <td class="text-right pb-5">$30.00</td>
-                </tr>
-                <tr>
-                    <td>Kids Cut</td>
-                    <td class="text-right pb-5">$30.00+</td>
-                </tr>
-                <tr>
-                    <td>Style</td>
-                    <td class="text-right pb-5">$50.00+</td>
-                </tr>
-                <tr>
-                    <td>Updo</td>
-                    <td class="text-right pb-5">$65+</td>
-                </tr>
-                <tr> 
-                    <td>Deep Conditioning</td>
-                    <td class="text-right pb-5">$15.00</td>
-                </tr>
-            </tbody>
-        </table>
-    </li>
-</ul>
-</div>
-<!--Color-->
-<div>
-<ul class="container-center pt-2 mx-8">
-    <li class="list-none text-blue-900 font-semibold">
-        <table class="w-1/2 h-full mx-auto" id="table2">
-            <tbody>
-                <tr>
-                    <td>Full Highlight</td>
-                    <td class="text-right pb-5">$100.00</td>
-                </tr>
-                <tr>
-                    <td>Men's Cut</td>
-                    <td class="text-right pb-5">$80.00</td>
-                </tr>
-                <tr>
-                    <td>New Growth</td>
-                    <td class="text-right pb-5">$50.00+</td>
-                </tr>
-                <tr>
-                    <td>All Over Color</td>
-                    <td class="text-right pb-5">$80.00+</td>
-                </tr>
-                <tr> 
-                    <td>Deep Conditioning</td>
-                    <td class="text-right pb-5">$15.00</td>
-                </tr>
-            </tbody>
-        </table>
-    </li>
-    </ul>
-</div>
+    <!--Pricing Table Cut/Style-->
+    <div>
+        <ul class="container-center pt-16 mx-10">
+            <li class="list-none text-blue-900 font-semibold">
+                <table class="w-1/2 h-full mx-auto" id="table1">
+                    <tbody>
+                        <tr>
+                            <td>Womans Cut</td>
+                            <td class="text-right pb-5">$50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Men's Cut</td>
+                            <td class="text-right pb-5">$30.00</td>
+                        </tr>
+                        <tr>
+                            <td>Kids Cut</td>
+                            <td class="text-right pb-5">$30.00+</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td class="text-right pb-5">$50.00+</td>
+                        </tr>
+                        <tr>
+                            <td>Updo</td>
+                            <td class="text-right pb-5">$65+</td>
+                        </tr>
+                        <tr> 
+                            <td>Deep Conditioning</td>
+                            <td class="text-right pb-5">$15.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </div>
+    <!--Color-->
+    <div>
+        <ul class="container-center pt-2 mx-8">
+            <li class="list-none text-blue-900 font-semibold">
+                <table class="w-1/2 h-full mx-auto" id="table2">
+                    <tbody>
+                        <tr>
+                            <td>Full Highlight</td>
+                            <td class="text-right pb-5">$100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Men's Cut</td>
+                            <td class="text-right pb-5">$80.00</td>
+                        </tr>
+                        <tr>
+                            <td>New Growth</td>
+                            <td class="text-right pb-5">$50.00+</td>
+                        </tr>
+                        <tr>
+                            <td>All Over Color</td>
+                            <td class="text-right pb-5">$80.00+</td>
+                        </tr>
+                        <tr> 
+                            <td>Deep Conditioning</td>
+                            <td class="text-right pb-5">$15.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <!--Google Map Location-->
 
 
- <div class="pt-10">
-        <iframe class="w-screen flex" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55135.05387862046!2d-90.961712!3d30.267265999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2946370b8164d8d!2sHidden%20Beauty%20Salon!5e0!3m2!1sen!2sus!4v1577755969272!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
+    <div class="pt-10">
+            <iframe class="w-screen flex" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55135.05387862046!2d-90.961712!3d30.267265999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2946370b8164d8d!2sHidden%20Beauty%20Salon!5e0!3m2!1sen!2sus!4v1577755969272!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
 
 
 <!--Hidden Beauty Request Appointment Form-->
-<div id="megaman">
-    <div class="container mx-auto">
-    <div class="flex justify-center items-center pt-10 pb-10 text-white text-4xl" id="textstyling">Request An Appointment</div>
-</div>
-</div>
-<!--Hidden Beauty Appointment Form Paragraph-->
-<div id="megaman">
-    <div class="container mx-auto">
-    <div class="flex justify-center items-center pt-3 pb-12 text-white mx-auto text-center w-4/5">Let us know which stylist you would like to see and the time/date you would like to request your appointment. If you have no preference for a stylist, we will book you with the next available stylist on our team. See you soon!</div>
-</div>
-</div>
+    <div class="megaman">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center pt-10 pb-10 text-white text-4xl textstyling">Request An Appointment</div>
+        </div>
+    </div>
+    <!--Hidden Beauty Appointment Form Paragraph-->
+    <div class="megaman">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center pt-3 pb-12 text-white mx-auto text-center w-4/5">Let us know which stylist you would like to see and the time/date you would like to request your appointment. If you have no preference for a stylist, we will book you with the next available stylist on our team. See you soon!</div>
+        </div>
+    </div>
 
 <!--Form Input Name-->
-   <div id="megaman"><a class="section3" name="Booking"></a>
-       <div class="container"></div>
+   <div class="megaman"><a class="section3" name="Booking"></a>
+       
        <div class="flex justify-center items-center text-white mx-auto text-center w-full">
            <form class="w-full h-full text-white">
-               <!--Name-->
-               <div class="container mx-auto">
-               <div class="pb-2 text-left mx-40">Name</div>
-               <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
-               </div>
-               <!--Email-->
-               <div class="container mx-auto">
-               <p class="pb-2 pt-3 text-left mx-40">Email</p>
-               <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
-               </div>
-               <!--Number-->
-               <div class="container mx-auto">
-               <p class="pb-2 pt-3 w-3/4 text-left mx-40">Phone Number</p>
-               <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
-               </div>
-               <!--Message area-->
-               <div class="container mx-auto">
-               <p class="pb-2 pt-3 text-left mx-40">Message</p>
-               <input class="w-3/4 h-full pb-24 pb-32 pb-48 bg-gray-500 opacity-25 rounded" type="text" placeholder="ex: I would like to book an appointment at 2:00PM with the next available stylist..."></input>
-               </div>
-              <!--Submit Button-->
-              <div class="container mx-48 pl-12">
-               <div class="pt-4 pb-8 mx-8 h-1/2 relative">
-                <button class="bg-transparent mx-32 hover:bg-orange-400 text-orange-400 font-semibold hover:text-white py-2 px-4 border rounded border-orange-400 hover:border-transparent text-2xl">Submit</button>
-                 </div>
-              </div>
+            <!--Name-->
+            <div class="container mx-auto">
+                <div class="pb-2 text-left mx-40">Name</div>
+                    <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
+            </div>
+            <!--Email-->
+            <div class="container mx-auto">
+                <p class="pb-2 pt-3 text-left mx-40">Email</p>
+                    <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
+            </div>
+            <!--Number-->
+            <div class="container mx-auto">
+                <p class="pb-2 pt-3 w-3/4 text-left mx-40">Phone Number</p>
+                    <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
+            </div>
+            <!--Message area-->
+            <div class="container mx-auto">
+                <p class="pb-2 pt-3 text-left mx-40">Message</p>
+                    <input class="w-3/4 h-full pb-24 pb-32 pb-48 bg-gray-500 opacity-25 rounded" type="text" placeholder="ex: I would like to book an appointment at 2:00PM with the next available stylist..."></input>
+            </div>
+            <!--Submit Button-->
+            <div class="container mx-48 pl-12">
+                <div class="pt-4 pb-8 mx-8 h-1/2 relative">
+                    <button class="bg-transparent mx-32 hover:bg-orange-400 text-orange-400 font-semibold hover:text-white py-2 px-4 border rounded border-orange-400 hover:border-transparent text-2xl">Submit</button>
+                </div>
+            </div>
             <!--Footer-->
             <div class="pt-10 pb-6" id="footer">
                     <footer class="text-center pb-8 text-gray-500">&copy; 2018 Hidden Beauty Salon</footer>
                     <p class="text-center text-gray-500 pb-3">This site is protected by reCAPTCHA and the Google <a href="#" id="copyright">Privacy Policy</a> and<a href="#" id="copyright"> Terms of Service</a> apply.</p>
                 </div>
-                 </div>
+            </div>
+
            </form>
        </div>
    </div>
         </div>
     </div>
 </div>
-</section>
-</body>
-</html>
+    </section>
+        </body>
+            </html>
