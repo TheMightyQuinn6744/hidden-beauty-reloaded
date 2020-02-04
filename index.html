@@ -135,12 +135,26 @@
 </div>
 
 <!--Google Map Location-->
+<div id="map"></div>
+
+    <script>
+        //initialize and add the map
+        function initMap() {
+            var options = {
+                zoom:8,
+                center: {lat:30.9843,lng:-91.9623}
+            }
+            //The Map centerd at Beauty 
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs9IQeoddRqSNEXVjpAqPJSZwBeMW1Xos&callback=initMap">
+    </script>
 
 
-    <div class="pt-10">
-            <iframe class="w-screen flex" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d55135.05387862046!2d-90.961712!3d30.267265999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2946370b8164d8d!2sHidden%20Beauty%20Salon!5e0!3m2!1sen!2sus!4v1577755969272!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.9407054346516!2d-90.96390068441964!3d30.267270614965643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626b695a2b059d1%3A0xf2946370b8164d8d!2sHidden%20Beauty%20Salon!5e0!3m2!1sen!2sus!4v1580259498107!5m2!1sen!2sus" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 <!--Hidden Beauty Request Appointment Form-->
     <div class="megaman">

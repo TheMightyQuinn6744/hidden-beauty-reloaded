@@ -57,9 +57,11 @@ window.onscroll = function() {
         document.getElementById("navtextB").style.display = "none";
         document.getElementById("navtextC").style.display = "none";
 
-        
+        //reveals the hidden beauty logo for a scrolling navbar
         document.getElementById("navlogo").style.display = "block";
+        //
         document.getElementById("navscroll").style.display = "";
 
     }
 };
+
