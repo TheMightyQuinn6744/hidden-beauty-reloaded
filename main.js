@@ -40,6 +40,7 @@ window.onscroll = function() {
         document.getElementById("navtextC").style.display = "";
         //hides hidden beauty logo image contained in scrolling navbar
         document.getElementById("navlogo").style.display="none";
+       
 
     } else {
         //hides scrolling navbar until user scrolls 100px
@@ -61,6 +62,7 @@ window.onscroll = function() {
         document.getElementById("navlogo").style.display = "block";
         //
         document.getElementById("navscroll").style.display = "";
+        
 
     }
 };

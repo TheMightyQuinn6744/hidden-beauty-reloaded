@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,9 +35,10 @@
 
     <div class="h-screen w-full bg-no-repeat bg-cover w-screen" style="background-image: url(https://www.hiddenbeautyla.com/img/uploads/_1200x675_crop_center-center_82_line/plant.jpg)">
         <div class="container pb-5 text-xl">
-            <nav class="flex justify-between items-center navbar w-3/4" >
-                    <!--fixed navbar-->
-                            <ul class="text-gray-500 w-full inline-flex justify-end">
+             <!--fixed navbar-->
+            <nav class="flex justify-between items-center navbar w-3/4">
+                   
+                            <ul class="text-gray-500 w-full inline-flex justify-end pt-5">
                                 <li class="hover:text-yellow-600 text-2xl mr-4" id="navtextA"><a href="#About">About</a></li>
                                 <li class="hover:text-yellow-600 text-2xl mr-4" id="navtextB"><a href="#Services">Services</a></li>
                                 <li class="hover:text-yellow-600 text-2xl " id="navtextC"><a href="#Booking">Booking</a></li>
@@ -50,9 +53,9 @@
         </div>
 <!--Hidden Beauty Description Section-->
 
-<div class="text-center uppercase pt-20 pb-12 text-4xl textstyling"><a name="About">We are a team of creative stylists who are passionate about what we do</div>
-    <div class="container mx-auto pb-16 w-2/3 text-center text-2xl" >
-        <div class="flex justify between items-center">
+<div class="text-center uppercase pt-20 w-2/3 pb-12 textstyling1 mx-auto text-2xl lg:text-5xl lg:w-1/3"><a name="About">We are a team of creative stylists who are passionate about what we do</div>
+    <div class="container mx-auto pb-16 w-full text-center" >
+        <div class="flex justify-between w-3/4 mx-auto text-sm lg:text-2xl">
                 Hidden Beauty is a salon dedicated to bringing our guests a true sense of style. 
                 We are a talented, positive group of dedicated people who share a common mission of 
                 helping our guests to be as beautiful on the outside as they are inwardly. 
@@ -63,38 +66,38 @@
 <!--link to services-->
 <div class="flex buttonContainer"><a name="Services"></a>
     <!--Hidden Beauty Style/Color Selector button ID's link to main.js-->
-    <button class="w-1/2 h-24 text-center py-8 font-bold cursor-pointer outline-none text-white bg-gray-500 hover:bg-blue-900 text-2xl tablinks" id="styleButton">Cut/Style</button>
-    <button class="w-1/2 bg-gray-500 h-24 text-center py-8 font-bold cursor-pointer outline-none text-white bg-blue-900 hover:bg-gray-500 text-2xl tablinks" id="colorButton">Color</button>
+    <button class="w-1/2 h-32 text-center py-8 font-bold cursor-pointer outline-none text-white bg-gray-500 hover:bg-blue-900 text-2xl tablinks" id="styleButton">Cut/Style</button>
+    <button class="w-1/2 bg-gray-500 h-32 text-center py-8 font-bold cursor-pointer outline-none text-white bg-blue-900 hover:bg-gray-500 text-2xl tablinks" id="colorButton">Color</button>
 </div>
     <!--Pricing Table Cut/Style-->
     <div>
-        <ul class="container-center pt-16 mx-10">
+        <ul class="container-center pt-16 mx-10 pb-14">
             <li class="list-none text-blue-900 font-semibold">
-                <table class="w-1/2 h-full mx-auto" id="table1">
+                <table class="w-1/2 h-full mx-auto border-collapse" id="table1">
                     <tbody>
                         <tr>
-                            <td>Womans Cut</td>
-                            <td class="text-right pb-5">$50.00</td>
+                            <td class="border-b-2 pb-5">Womans Cut</td>
+                            <td class="text-right pb-5 pl-10 border-b-2">$50.00</td>
                         </tr>
                         <tr>
-                            <td>Men's Cut</td>
-                            <td class="text-right pb-5">$30.00</td>
+                            <td class="border-b-2">Men's Cut</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$30.00</td>
                         </tr>
                         <tr>
-                            <td>Kids Cut</td>
-                            <td class="text-right pb-5">$30.00+</td>
+                            <td class="border-b-2">Kids Cut</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$30.00+</td>
                         </tr>
                         <tr>
-                            <td>Style</td>
-                            <td class="text-right pb-5">$50.00+</td>
+                            <td class="border-b-2">Style</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$50.00+</td>
                         </tr>
                         <tr>
-                            <td>Updo</td>
-                            <td class="text-right pb-5">$65+</td>
+                            <td class="border-b-2">Updo</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$65+</td>
                         </tr>
                         <tr> 
-                            <td>Deep Conditioning</td>
-                            <td class="text-right pb-5">$15.00</td>
+                            <td class="border-b-2">Deep Conditioning</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$15.00</td>
                         </tr>
                     </tbody>
                 </table>
@@ -103,29 +106,29 @@
     </div>
     <!--Color-->
     <div>
-        <ul class="container-center pt-2 mx-8">
+        <ul class="container-center pt-14 mx-10 pb-16">
             <li class="list-none text-blue-900 font-semibold">
-                <table class="w-1/2 h-full mx-auto" id="table2">
+                <table class="w-1/2 h-full mx-auto border-collapse" id="table2">
                     <tbody>
                         <tr>
-                            <td>Full Highlight</td>
-                            <td class="text-right pb-5">$100.00</td>
+                            <td class="border-b-2">Full Highlight</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$100.00</td>
                         </tr>
                         <tr>
-                            <td>Men's Cut</td>
-                            <td class="text-right pb-5">$80.00</td>
+                            <td class="border-b-2 ">Men's Cut</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$80.00</td>
                         </tr>
                         <tr>
-                            <td>New Growth</td>
-                            <td class="text-right pb-5">$50.00+</td>
+                            <td class="border-b-2 ">New Growth</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$50.00+</td>
                         </tr>
                         <tr>
-                            <td>All Over Color</td>
-                            <td class="text-right pb-5">$80.00+</td>
+                            <td class="border-b-2">All Over Color</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$80.00+</td>
                         </tr>
                         <tr> 
-                            <td>Deep Conditioning</td>
-                            <td class="text-right pb-5">$15.00</td>
+                            <td class="border-b-2">Deep Conditioning</td>
+                            <td class="text-right pb-5 border-b-2 pt-4">$15.00</td>
                         </tr>
                     </tbody>
                 </table>
@@ -176,28 +179,28 @@
            <form class="w-full h-full text-white">
             <!--Name-->
             <div class="container mx-auto">
-                <div class="pb-2 text-left mx-40">Name</div>
+                <div class="pb-2 text-left pl-20 lg:ml-24">Name</div>
                     <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
             </div>
             <!--Email-->
             <div class="container mx-auto">
-                <p class="pb-2 pt-3 text-left mx-40">Email</p>
+                <p class="pb-2 pt-3 text-left pl-20 lg:ml-24">Email</p>
                     <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
             </div>
             <!--Number-->
             <div class="container mx-auto">
-                <p class="pb-2 pt-3 w-3/4 text-left mx-40">Phone Number</p>
+                <p class="pb-2 pt-3 w-3/4 text-left pl-20 lg:ml-24">Phone Number</p>
                     <input class="w-3/4 h-10 bg-gray-500 opacity-25 border rounded" type="text" placeholder="">
             </div>
             <!--Message area-->
-            <div class="container mx-auto">
-                <p class="pb-2 pt-3 text-left mx-40">Message</p>
+            <div class="container mx-auto ">
+                <p class="pb-2 pt-3 text-left pl-20 lg:ml-24">Message</p>
                     <input class="w-3/4 h-full pb-24 pb-32 pb-48 bg-gray-500 opacity-25 rounded" type="text" placeholder="ex: I would like to book an appointment at 2:00PM with the next available stylist..."></input>
             </div>
             <!--Submit Button-->
             <div class="container mx-48 pl-12">
-                <div class="pt-4 pb-8 mx-8 h-1/2 relative">
-                    <button class="bg-transparent mx-32 hover:bg-orange-400 text-orange-400 font-semibold hover:text-white py-2 px-4 border rounded border-orange-400 hover:border-transparent text-2xl">Submit</button>
+                <div class="pt-4 pb-8 h-1/2 w-full">
+                    <button class="bg-transparent lg:mx-32 sm: hover:bg-orange-400 text-orange-400 font-semibold hover:text-white py-2 px-4 border rounded border-orange-400 hover:border-transparent text-2xl textstyling">Submit</button>
                 </div>
             </div>
             <!--Footer-->

@@ -7,6 +7,12 @@
 /*Text styling controls oswald font styling element across site */
 .textstyling {
     font-family: 'Oswald', sans-serif;
+   
+}
+
+.textstyling1 {
+    font-family: 'Oswald', sans-serif;
+    
 }
 /*styles the text for style/button and eliminates outline when clicked */
 #styleButton {
@@ -57,5 +63,5 @@
 /*targets smooth scrolling for all html anchor tags */
 html {
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
-
