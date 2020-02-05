@@ -24,7 +24,7 @@ window.onload=function() {
     document.getElementById("styleButton").click();
 }; 
 
-
+//function that hides navbar when page position remains at 0px
 window.onscroll = function() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop < 100) {
         document.getElementById("navbar").style.top = "0";
